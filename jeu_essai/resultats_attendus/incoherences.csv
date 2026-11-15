@@ -1,0 +1,6 @@
+activite,controle,detail
+T02,RTO < DMIA,RTO 20 min >= DMIA 10 min
+T03,RTO < DMIA,RTO 1 h >= DMIA 1 h
+T04,DMIA <= palier d'impact,DMIA 1 j dépasse le palier d'impact inacceptable (1 h)
+T06,Valeur manquante,rpo_min absent ou non numérique
+T05,Référence CMDB,CI inconnu 'CI-FANTOME' dans ci_supports

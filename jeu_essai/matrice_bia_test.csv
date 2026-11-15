@@ -1,0 +1,9 @@
+id,service,activite,dmia_min,rto_min,rpo_min,mbco,ci_supports,mode_degrade,imp_1h,imp_4h,imp_24h,imp_72h,imp_1w
+T01,Urgences,Activité saine (témoin),60,30,15,Mode dégradé papier,APP-X;SRV-X,oui,5,5,5,5,5
+T02,Réanimation,ERREUR 1 : RTO supérieur au DMIA,10,20,5,-,APP-X,partiel,5,5,5,5,5
+T03,Bloc,ERREUR 2 : RTO égal au DMIA,60,60,15,-,APP-X,partiel,4,5,5,5,5
+T04,Pharmacie,ERREUR 3 : DMIA (24 h) au-delà du palier d'impact (1 h),1440,300,60,-,APP-X,oui,4,5,5,5,5
+T05,Laboratoire,ERREUR 4 : CI inconnu,240,120,60,-,APP-X;CI-FANTOME,non,2,4,5,5,5
+T06,Facturation,ERREUR 5 : RPO manquant,10080,4320,,-,APP-X,oui,1,1,1,1,5
+T07,Admission,ALERTE : RTO technique 120 min > RTO métier 30 min,1440,30,10,-,APP-Y,non,1,1,4,5,5
+T08,Imagerie,ALERTE RPO : RPO technique 240 min > RPO métier 30 min,240,120,30,-,APP-Z,partiel,2,4,5,5,5

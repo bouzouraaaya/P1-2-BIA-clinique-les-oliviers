@@ -1,0 +1,5 @@
+id,nom,type,classe_glpi,description,localisation,rto_tech_min,rpo_tech_min,depends_on,hypothese
+APP-X,Application X,Application,,,,30,15,SRV-X,
+SRV-X,Serveur X,Serveur,,,,30,,,
+APP-Y,Application Y,Application,,,,120,60,SRV-X,
+APP-Z,Application Z,Application,,,,60,240,SRV-X,

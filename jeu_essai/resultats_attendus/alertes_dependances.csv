@@ -1,0 +1,7 @@
+id_activite,activite,nature,ci,nom_ci,type_ci,niveau_dependance,valeur_metier_min,valeur_technique_min,ecart_min,mode_degrade,severite
+T02,ERREUR 1 : RTO supérieur au DMIA,RTO,APP-X,Application X,Application,1,20.0,30.0,10.0,partiel,MAJEUR
+T02,ERREUR 1 : RTO supérieur au DMIA,RPO,APP-X,Application X,Application,1,5.0,15.0,10.0,partiel,MAJEUR
+T02,ERREUR 1 : RTO supérieur au DMIA,RTO,SRV-X,Serveur X,Serveur,2,20.0,30.0,10.0,partiel,MAJEUR
+T07,ALERTE : RTO technique 120 min > RTO métier 30 min,RTO,APP-Y,Application Y,Application,1,30.0,120.0,90.0,non,CRITIQUE
+T07,ALERTE : RTO technique 120 min > RTO métier 30 min,RPO,APP-Y,Application Y,Application,1,10.0,60.0,50.0,non,CRITIQUE
+T08,ALERTE RPO : RPO technique 240 min > RPO métier 30 min,RPO,APP-Z,Application Z,Application,1,30.0,240.0,210.0,partiel,MAJEUR

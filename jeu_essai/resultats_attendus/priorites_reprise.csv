@@ -1,0 +1,9 @@
+rang,id,service,activite,classe,dmia_min,rto_min,rpo_min,mbco,mode_degrade,nb_alertes
+1,T02,Réanimation,ERREUR 1 : RTO supérieur au DMIA,P1,10,20,5.0,-,partiel,3
+2,T01,Urgences,Activité saine (témoin),P1,60,30,15.0,Mode dégradé papier,oui,0
+3,T03,Bloc,ERREUR 2 : RTO égal au DMIA,P1,60,60,15.0,-,partiel,0
+4,T05,Laboratoire,ERREUR 4 : CI inconnu,P2,240,120,60.0,-,non,0
+5,T08,Imagerie,ALERTE RPO : RPO technique 240 min > RPO métier 30 min,P2,240,120,30.0,-,partiel,1
+6,T07,Admission,ALERTE : RTO technique 120 min > RTO métier 30 min,P3,1440,30,10.0,-,non,2
+7,T04,Pharmacie,ERREUR 3 : DMIA (24 h) au-delà du palier d'impact (1 h),P3,1440,300,60.0,-,oui,0
+8,T06,Facturation,ERREUR 5 : RPO manquant,P4,10080,4320,,-,oui,0
