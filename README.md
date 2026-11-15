@@ -21,3 +21,8 @@ Code de retour : 0 sans incohérence, 1 sinon.
 - Alerte si le RTO technique d'un CI dont dépend une activité dépasse le RTO métier (RPO idem pour applications et bases).
 - RTO d'une chaîne approché par le maximum de ses composants (hypothèse H13).
 - Priorité : tri par DMIA, RTO, impact à 1 h décroissant ; classes P1 (≤ 1 h), P2 (≤ 4 h), P3 (≤ 72 h), P4.
+
+## Schéma d'architecture
+- `docs/architecture_SIH.drawio` : schéma modifiable (ouvrir avec draw.io / diagrams.net)
+- `docs/architecture_SIH.png` : image du schéma (35 CI, RTO techniques)
+Le fichier .drawio a été validé comme XML mais pas ouvert dans l'application draw.io lors de la préparation : vérifier l'affichage à l'ouverture.
