@@ -1,0 +1,56 @@
+test_cycle_detecte (test_bia_tool.TestCycle.test_cycle_detecte) ... ok
+test_alerte_dpi_pour_la_reanimation (test_bia_tool.TestDonneesPrincipales.test_alerte_dpi_pour_la_reanimation) ... ok
+test_aucune_incoherence (test_bia_tool.TestDonneesPrincipales.test_aucune_incoherence) ... ok
+test_classes (test_bia_tool.TestDonneesPrincipales.test_classes) ... ok
+test_graphe_sans_cycle (test_bia_tool.TestDonneesPrincipales.test_graphe_sans_cycle) ... ok
+test_quatorze_activites_et_35_ci (test_bia_tool.TestDonneesPrincipales.test_quatorze_activites_et_35_ci) ... ok
+test_rangs_uniques_et_ordre_par_dmia (test_bia_tool.TestDonneesPrincipales.test_rangs_uniques_et_ordre_par_dmia) ... ok
+test_reanimation_est_la_premiere_priorite (test_bia_tool.TestDonneesPrincipales.test_reanimation_est_la_premiere_priorite) ... ok
+test_rto_strictement_inferieur_au_dmia (test_bia_tool.TestDonneesPrincipales.test_rto_strictement_inferieur_au_dmia) ... ok
+test_activite_saine_sans_erreur (test_bia_tool.TestJeuDEssai.test_activite_saine_sans_erreur) ... ok
+test_alerte_rpo_technique_detectee (test_bia_tool.TestJeuDEssai.test_alerte_rpo_technique_detectee) ... ok
+test_alerte_rto_technique_detectee (test_bia_tool.TestJeuDEssai.test_alerte_rto_technique_detectee) ... ok
+test_ci_inconnu_detecte (test_bia_tool.TestJeuDEssai.test_ci_inconnu_detecte) ... ok
+test_code_retour_nonzero (test_bia_tool.TestJeuDEssai.test_code_retour_nonzero) ... ==============================================================================
+RAPPORT DE CONTRÔLE DU BIA
+==============================================================================
+Activités : 8 | Éléments de configuration : 4
+
+1) COHÉRENCE DES PARAMÈTRES
+  [INCOHÉRENT] T02        RTO < DMIA                 RTO 20 min >= DMIA 10 min
+  [INCOHÉRENT] T03        RTO < DMIA                 RTO 1 h >= DMIA 1 h
+  [INCOHÉRENT] T04        DMIA <= palier d'impact    DMIA 1 j dépasse le palier d'impact inacceptable (1 h)
+  [INCOHÉRENT] T06        Valeur manquante           rpo_min absent ou non numérique
+  [INCOHÉRENT] T05        Référence CMDB             CI inconnu 'CI-FANTOME' dans ci_supports
+
+2) ÉCARTS ENTRE BESOIN MÉTIER ET CAPACITÉ TECHNIQUE (par activité)
+  T02 ERREUR 1 : RTO supérieur au DMIA             RTO métier  20 min : 2 écart(s) RTO SI, 0 fournisseur(s), 1 écart(s) RPO ; pire SI : APP-X (30 min) [MAJEUR]
+  T01 Activité saine (témoin)                      RTO métier  30 min : aucun écart
+  T03 ERREUR 2 : RTO égal au DMIA                  RTO métier     1 h : aucun écart
+  T05 ERREUR 4 : CI inconnu                        RTO métier     2 h : aucun écart
+  T08 ALERTE RPO : RPO technique 240 min > RPO mét RTO métier     2 h : 0 écart(s) RTO SI, 0 fournisseur(s), 1 écart(s) RPO [MAJEUR]
+  T07 ALERTE : RTO technique 120 min > RTO métier  RTO métier  30 min : 1 écart(s) RTO SI, 0 fournisseur(s), 1 écart(s) RPO ; pire SI : APP-Y (2 h) [CRITIQUE]
+  T04 ERREUR 3 : DMIA (24 h) au-delà du palier d'i RTO métier     5 h : aucun écart
+  T06 ERREUR 5 : RPO manquant                      RTO métier     3 j : aucun écart
+
+3) PRIORITÉS DE REPRISE
+   1. T02 P1  DMIA  10 min  RTO  20 min  RPO   5 min  ERREUR 1 : RTO supérieur au DMIA
+   2. T01 P1  DMIA     1 h  RTO  30 min  RPO  15 min  Activité saine (témoin)
+   3. T03 P1  DMIA     1 h  RTO     1 h  RPO  15 min  ERREUR 2 : RTO égal au DMIA
+   4. T05 P2  DMIA     4 h  RTO     2 h  RPO     1 h  ERREUR 4 : CI inconnu
+   5. T08 P2  DMIA     4 h  RTO     2 h  RPO  30 min  ALERTE RPO : RPO technique 240 min > RPO métier 30 min
+   6. T07 P3  DMIA     1 j  RTO  30 min  RPO  10 min  ALERTE : RTO technique 120 min > RTO métier 30 min
+   7. T04 P3  DMIA     1 j  RTO     5 h  RPO     1 h  ERREUR 3 : DMIA (24 h) au-delà du palier d'impact (1 h)
+   8. T06 P4  DMIA     7 j  RTO     3 j  RPO     n/d  ERREUR 5 : RPO manquant
+ok
+test_dmia_au_dela_du_palier_detecte (test_bia_tool.TestJeuDEssai.test_dmia_au_dela_du_palier_detecte) ... ok
+test_exactement_cinq_incoherences (test_bia_tool.TestJeuDEssai.test_exactement_cinq_incoherences) ... ok
+test_rto_egal_au_dmia_detecte (test_bia_tool.TestJeuDEssai.test_rto_egal_au_dmia_detecte) ... ok
+test_rto_superieur_au_dmia_detecte (test_bia_tool.TestJeuDEssai.test_rto_superieur_au_dmia_detecte) ... ok
+test_valeur_manquante_detectee (test_bia_tool.TestJeuDEssai.test_valeur_manquante_detectee) ... ok
+test_temps_d_execution_sans_graphe (test_bia_tool.TestPerformance.test_temps_d_execution_sans_graphe) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.081s
+
+OK

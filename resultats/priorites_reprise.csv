@@ -1,0 +1,15 @@
+rang,id,service,activite,classe,dmia_min,rto_min,rpo_min,mbco,mode_degrade,nb_alertes
+1,A02,Réanimation,Réanimation et soins continus,P1,10,5,5,"Maintien de la surveillance (scopes autonomes), oxygène et prescriptions sur papier pour tous les patients présents",partiel,22
+2,A01,Urgences,Accueil et prise en charge des urgences vitales,P1,15,10,5,"Prise en charge des urgences vitales uniquement, sur fiches papier, avec accès imagerie/biologie urgentes",partiel,30
+3,A13,Support,Téléphonie et communication d'urgence interne,P1,60,20,1440,Téléphones DECT/mobiles de crise et annuaire papier pour les services critiques,partiel,6
+4,A03,Bloc opératoire,Interventions chirurgicales (6 salles),P1,60,30,15,"Terminer les interventions en cours, accueillir les urgences chirurgicales vitales, reporter le programme électif",partiel,10
+5,A06,Pharmacie,Dispensation des médicaments et dispositifs médicaux,P2,240,90,60,"Délivrance des traitements critiques et stupéfiants sur ordonnance papier, traçabilité différée",partiel,3
+6,A04,Imagerie,"Imagerie médicale (radiologie, scanner, IRM)",P2,240,120,60,"Examens urgents uniquement, lecture sur console, compte rendu papier",partiel,3
+7,A05,Laboratoire,Analyses biologiques,P2,240,120,60,"Analyses urgentes (gaz du sang, hémostase, biochimie vitale), résultats téléphonés et papier",partiel,1
+8,A14,DSI,Exploitation et support du système d'information,P2,240,180,240,Supervision des systèmes critiques et gestion des accès d'urgence,non,0
+9,A07,Hospitalisation,Soins en unités d'hospitalisation,P3,1440,480,240,"Suivi des patients sur dossier papier de secours, traitements administrés selon dernier plan connu",oui,0
+10,A08,Administration,Admission et gestion administrative des patients,P3,1440,600,60,"Admissions urgentes sur formulaires papier, régularisation différée",oui,0
+11,A11,Logistique,"Approvisionnement, achats et gestion des stocks",P3,2880,1440,720,"Commandes d'urgence par téléphone, stocks de sécurité",oui,2
+12,A12,Technique,Maintenance biomédicale et technique,P3,2880,1800,1440,"Interventions curatives urgentes uniquement, GMAO consultée a posteriori",oui,0
+13,A10,Administration,Gestion des ressources humaines et de la paie,P4,10080,2880,1440,"Paie sur base du mois précédent en cas d'échéance, plannings de garde papier",oui,0
+14,A09,Facturation,Facturation et recouvrement,P4,10080,4320,1440,"Saisie différée, pas de facturation pendant l'interruption",oui,0

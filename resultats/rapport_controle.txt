@@ -1,0 +1,41 @@
+==============================================================================
+RAPPORT DE CONTRÔLE DU BIA
+==============================================================================
+Activités : 14 | Éléments de configuration : 35
+
+1) COHÉRENCE DES PARAMÈTRES
+  Aucune incohérence : RTO < DMIA, DMIA <= palier d'impact, références CMDB valides.
+
+2) ÉCARTS ENTRE BESOIN MÉTIER ET CAPACITÉ TECHNIQUE (par activité)
+  A02 Réanimation et soins continus                RTO métier   5 min : 16 écart(s) RTO SI, 4 fournisseur(s), 2 écart(s) RPO ; pire SI : NET-WAN (4 h) [MAJEUR]
+  A01 Accueil et prise en charge des urgences vita RTO métier  10 min : 21 écart(s) RTO SI, 4 fournisseur(s), 5 écart(s) RPO ; pire SI : NET-WAN (4 h) [MAJEUR]
+  A13 Téléphonie et communication d'urgence intern RTO métier  20 min : 5 écart(s) RTO SI, 1 fournisseur(s), 0 écart(s) RPO ; pire SI : NET-WAN (4 h) [MAJEUR]
+  A03 Interventions chirurgicales (6 salles)       RTO métier  30 min : 5 écart(s) RTO SI, 3 fournisseur(s), 2 écart(s) RPO ; pire SI : APP-BLOC (2 h) [MAJEUR]
+  A06 Dispensation des médicaments et dispositifs  RTO métier   1.5 h : 1 écart(s) RTO SI, 2 fournisseur(s), 0 écart(s) RPO ; pire SI : APP-PHA (2 h) [MAJEUR]
+  A04 Imagerie médicale (radiologie, scanner, IRM) RTO métier     2 h : 0 écart(s) RTO SI, 2 fournisseur(s), 1 écart(s) RPO [MAJEUR]
+  A05 Analyses biologiques                         RTO métier     2 h : 0 écart(s) RTO SI, 1 fournisseur(s), 0 écart(s) RPO [MAJEUR]
+  A14 Exploitation et support du système d'informa RTO métier     3 h : aucun écart
+  A07 Soins en unités d'hospitalisation            RTO métier     8 h : aucun écart
+  A08 Admission et gestion administrative des pati RTO métier    10 h : aucun écart
+  A11 Approvisionnement, achats et gestion des sto RTO métier     1 j : 0 écart(s) RTO SI, 0 fournisseur(s), 2 écart(s) RPO [MODERE]
+  A12 Maintenance biomédicale et technique         RTO métier  1.25 j : aucun écart
+  A10 Gestion des ressources humaines et de la pai RTO métier     2 j : aucun écart
+  A09 Facturation et recouvrement                  RTO métier     3 j : aucun écart
+
+3) PRIORITÉS DE REPRISE
+   1. A02 P1  DMIA  10 min  RTO   5 min  RPO   5 min  Réanimation et soins continus
+   2. A01 P1  DMIA  15 min  RTO  10 min  RPO   5 min  Accueil et prise en charge des urgences vitales
+   3. A13 P1  DMIA     1 h  RTO  20 min  RPO     1 j  Téléphonie et communication d'urgence interne
+   4. A03 P1  DMIA     1 h  RTO  30 min  RPO  15 min  Interventions chirurgicales (6 salles)
+   5. A06 P2  DMIA     4 h  RTO   1.5 h  RPO     1 h  Dispensation des médicaments et dispositifs médicaux
+   6. A04 P2  DMIA     4 h  RTO     2 h  RPO     1 h  Imagerie médicale (radiologie, scanner, IRM)
+   7. A05 P2  DMIA     4 h  RTO     2 h  RPO     1 h  Analyses biologiques
+   8. A14 P2  DMIA     4 h  RTO     3 h  RPO     4 h  Exploitation et support du système d'information
+   9. A07 P3  DMIA     1 j  RTO     8 h  RPO     4 h  Soins en unités d'hospitalisation
+  10. A08 P3  DMIA     1 j  RTO    10 h  RPO     1 h  Admission et gestion administrative des patients
+  11. A11 P3  DMIA     2 j  RTO     1 j  RPO    12 h  Approvisionnement, achats et gestion des stocks
+  12. A12 P3  DMIA     2 j  RTO  1.25 j  RPO     1 j  Maintenance biomédicale et technique
+  13. A10 P4  DMIA     7 j  RTO     2 j  RPO     1 j  Gestion des ressources humaines et de la paie
+  14. A09 P4  DMIA     7 j  RTO     3 j  RPO     1 j  Facturation et recouvrement
+
+4) CI AU CONTOUR ROUGE DU GRAPHE (28) : APP-AD, APP-BLOC, APP-DPI, APP-PACS, APP-PHA, APP-SIL, APP-TEL, DB-DPI, DB-SIL, FOU-BIO, FOU-O2, FOU-SIH, FOU-TEL, GE-01, HYP-01, HYP-02, NET-CORE, NET-FW, NET-WAN, SAL-DC, SAN-01, SRV-AD, SRV-BLOC, SRV-DB01, SRV-DPI, SRV-IPBX, SRV-PACS, SRV-SIL

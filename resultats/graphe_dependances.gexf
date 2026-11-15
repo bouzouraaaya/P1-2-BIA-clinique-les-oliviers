@@ -1,0 +1,515 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-11-13">
+    <creator>NetworkX 3.7</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="kind" type="string" />
+      <attribute id="1" title="type" type="string" />
+      <attribute id="2" title="nom" type="string" />
+      <attribute id="3" title="layer" type="long" />
+      <attribute id="4" title="service" type="string" />
+    </attributes>
+    <nodes>
+      <node id="APP-DPI" label="APP-DPI">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="Dossier Patient Informatisé" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="APP-PACS" label="APP-PACS">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="PACS (imagerie)" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="APP-SIL" label="APP-SIL">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="SIL (laboratoire)" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="APP-PHA" label="APP-PHA">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="Logiciel pharmacie" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="APP-ERP" label="APP-ERP">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="ERP de gestion" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="APP-TEL" label="APP-TEL">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="Téléphonie IP (IPPBX)" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="APP-AD" label="APP-AD">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="Annuaire et authentification" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="APP-BLOC" label="APP-BLOC">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Application" />
+          <attvalue for="2" value="Planification du bloc opératoire" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="SRV-DPI" label="SRV-DPI">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur applicatif DPI" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="SRV-PACS" label="SRV-PACS">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur PACS" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-SIL" label="SRV-SIL">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur SIL" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-PHA" label="SRV-PHA">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur pharmacie" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-ERP" label="SRV-ERP">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur ERP" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-IPBX" label="SRV-IPBX">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur IPBX" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-AD" label="SRV-AD">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Contrôleur de domaine" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="SRV-BLOC" label="SRV-BLOC">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur planification bloc" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="SRV-DB01" label="SRV-DB01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Serveur" />
+          <attvalue for="2" value="Serveur de bases de données" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="DB-DPI" label="DB-DPI">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Base de données" />
+          <attvalue for="2" value="Base de données DPI" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="DB-SIL" label="DB-SIL">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Base de données" />
+          <attvalue for="2" value="Base de données SIL" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="DB-PHA" label="DB-PHA">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Base de données" />
+          <attvalue for="2" value="Base de données pharmacie" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="DB-ERP" label="DB-ERP">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Base de données" />
+          <attvalue for="2" value="Base de données ERP" />
+          <attvalue for="3" value="2" />
+        </attvalues>
+      </node>
+      <node id="HYP-01" label="HYP-01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Infrastructure" />
+          <attvalue for="2" value="Hôte de virtualisation 1" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="HYP-02" label="HYP-02">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Infrastructure" />
+          <attvalue for="2" value="Hôte de virtualisation 2" />
+          <attvalue for="3" value="5" />
+        </attvalues>
+      </node>
+      <node id="SAN-01" label="SAN-01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Infrastructure" />
+          <attvalue for="2" value="Baie de stockage SAN" />
+          <attvalue for="3" value="6" />
+        </attvalues>
+      </node>
+      <node id="BKP-01" label="BKP-01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Infrastructure" />
+          <attvalue for="2" value="Serveur de sauvegarde" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="NET-CORE" label="NET-CORE">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Réseau" />
+          <attvalue for="2" value="Cœur de réseau" />
+          <attvalue for="3" value="6" />
+        </attvalues>
+      </node>
+      <node id="NET-FW" label="NET-FW">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Réseau" />
+          <attvalue for="2" value="Pare-feu" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="NET-WAN" label="NET-WAN">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Réseau" />
+          <attvalue for="2" value="Liaison opérateur télécom" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="SAL-DC" label="SAL-DC">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Infrastructure" />
+          <attvalue for="2" value="Salle serveurs" />
+          <attvalue for="3" value="7" />
+        </attvalues>
+      </node>
+      <node id="UPS-01" label="UPS-01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Alimentation" />
+          <attvalue for="2" value="Onduleur" />
+          <attvalue for="3" value="8" />
+        </attvalues>
+      </node>
+      <node id="GE-01" label="GE-01">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Alimentation" />
+          <attvalue for="2" value="Groupe électrogène" />
+          <attvalue for="3" value="8" />
+        </attvalues>
+      </node>
+      <node id="FOU-SIH" label="FOU-SIH">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Fournisseur" />
+          <attvalue for="2" value="Éditeur du SIH" />
+          <attvalue for="3" value="3" />
+        </attvalues>
+      </node>
+      <node id="FOU-O2" label="FOU-O2">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Fournisseur" />
+          <attvalue for="2" value="Fournisseur d'oxygène médical" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="FOU-TEL" label="FOU-TEL">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Fournisseur" />
+          <attvalue for="2" value="Opérateur télécom" />
+          <attvalue for="3" value="4" />
+        </attvalues>
+      </node>
+      <node id="FOU-BIO" label="FOU-BIO">
+        <attvalues>
+          <attvalue for="0" value="ci" />
+          <attvalue for="1" value="Fournisseur" />
+          <attvalue for="2" value="Société de maintenance biomédicale" />
+          <attvalue for="3" value="1" />
+        </attvalues>
+      </node>
+      <node id="A01" label="A01">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Accueil et prise en charge des urgences vitales" />
+          <attvalue for="4" value="Urgences" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A02" label="A02">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Réanimation et soins continus" />
+          <attvalue for="4" value="Réanimation" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A03" label="A03">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Interventions chirurgicales (6 salles)" />
+          <attvalue for="4" value="Bloc opératoire" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A04" label="A04">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Imagerie médicale (radiologie, scanner, IRM)" />
+          <attvalue for="4" value="Imagerie" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A05" label="A05">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Analyses biologiques" />
+          <attvalue for="4" value="Laboratoire" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A06" label="A06">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Dispensation des médicaments et dispositifs médicaux" />
+          <attvalue for="4" value="Pharmacie" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A07" label="A07">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Soins en unités d'hospitalisation" />
+          <attvalue for="4" value="Hospitalisation" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A08" label="A08">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Admission et gestion administrative des patients" />
+          <attvalue for="4" value="Administration" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A09" label="A09">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Facturation et recouvrement" />
+          <attvalue for="4" value="Facturation" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A10" label="A10">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Gestion des ressources humaines et de la paie" />
+          <attvalue for="4" value="Administration" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A11" label="A11">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Approvisionnement, achats et gestion des stocks" />
+          <attvalue for="4" value="Logistique" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A12" label="A12">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Maintenance biomédicale et technique" />
+          <attvalue for="4" value="Technique" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A13" label="A13">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Téléphonie et communication d'urgence interne" />
+          <attvalue for="4" value="Support" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+      <node id="A14" label="A14">
+        <attvalues>
+          <attvalue for="0" value="activite" />
+          <attvalue for="1" value="Activité" />
+          <attvalue for="2" value="Exploitation et support du système d'information" />
+          <attvalue for="4" value="DSI" />
+          <attvalue for="3" value="0" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="APP-DPI" target="SRV-DPI" id="0" />
+      <edge source="APP-DPI" target="DB-DPI" id="1" />
+      <edge source="APP-DPI" target="APP-AD" id="2" />
+      <edge source="APP-DPI" target="FOU-SIH" id="3" />
+      <edge source="APP-PACS" target="SRV-PACS" id="4" />
+      <edge source="APP-PACS" target="FOU-SIH" id="5" />
+      <edge source="APP-SIL" target="SRV-SIL" id="6" />
+      <edge source="APP-SIL" target="DB-SIL" id="7" />
+      <edge source="APP-PHA" target="SRV-PHA" id="8" />
+      <edge source="APP-PHA" target="DB-PHA" id="9" />
+      <edge source="APP-ERP" target="SRV-ERP" id="10" />
+      <edge source="APP-ERP" target="DB-ERP" id="11" />
+      <edge source="APP-TEL" target="SRV-IPBX" id="12" />
+      <edge source="APP-AD" target="SRV-AD" id="13" />
+      <edge source="APP-BLOC" target="SRV-BLOC" id="14" />
+      <edge source="APP-BLOC" target="APP-DPI" id="15" />
+      <edge source="SRV-DPI" target="HYP-01" id="16" />
+      <edge source="SRV-DPI" target="NET-CORE" id="17" />
+      <edge source="SRV-PACS" target="HYP-01" id="18" />
+      <edge source="SRV-PACS" target="SAN-01" id="19" />
+      <edge source="SRV-PACS" target="NET-CORE" id="20" />
+      <edge source="SRV-SIL" target="HYP-02" id="21" />
+      <edge source="SRV-SIL" target="NET-CORE" id="22" />
+      <edge source="SRV-PHA" target="HYP-02" id="23" />
+      <edge source="SRV-PHA" target="NET-CORE" id="24" />
+      <edge source="SRV-ERP" target="HYP-02" id="25" />
+      <edge source="SRV-ERP" target="NET-CORE" id="26" />
+      <edge source="SRV-IPBX" target="NET-CORE" id="27" />
+      <edge source="SRV-IPBX" target="NET-WAN" id="28" />
+      <edge source="SRV-AD" target="HYP-01" id="29" />
+      <edge source="SRV-BLOC" target="HYP-02" id="30" />
+      <edge source="SRV-BLOC" target="NET-CORE" id="31" />
+      <edge source="SRV-DB01" target="HYP-02" id="32" />
+      <edge source="SRV-DB01" target="SAN-01" id="33" />
+      <edge source="DB-DPI" target="SRV-DB01" id="34" />
+      <edge source="DB-SIL" target="SRV-DB01" id="35" />
+      <edge source="DB-PHA" target="SRV-DB01" id="36" />
+      <edge source="DB-ERP" target="SRV-DB01" id="37" />
+      <edge source="HYP-01" target="SAL-DC" id="38" />
+      <edge source="HYP-01" target="SAN-01" id="39" />
+      <edge source="HYP-01" target="NET-CORE" id="40" />
+      <edge source="HYP-02" target="SAL-DC" id="41" />
+      <edge source="HYP-02" target="SAN-01" id="42" />
+      <edge source="HYP-02" target="NET-CORE" id="43" />
+      <edge source="SAN-01" target="SAL-DC" id="44" />
+      <edge source="BKP-01" target="SAN-01" id="45" />
+      <edge source="BKP-01" target="SAL-DC" id="46" />
+      <edge source="NET-CORE" target="SAL-DC" id="47" />
+      <edge source="NET-FW" target="NET-CORE" id="48" />
+      <edge source="NET-WAN" target="NET-FW" id="49" />
+      <edge source="NET-WAN" target="FOU-TEL" id="50" />
+      <edge source="SAL-DC" target="UPS-01" id="51" />
+      <edge source="SAL-DC" target="GE-01" id="52" />
+      <edge source="A01" target="APP-DPI" id="53" />
+      <edge source="A01" target="APP-TEL" id="54" />
+      <edge source="A01" target="APP-PACS" id="55" />
+      <edge source="A01" target="APP-SIL" id="56" />
+      <edge source="A01" target="FOU-O2" id="57" />
+      <edge source="A01" target="FOU-BIO" id="58" />
+      <edge source="A02" target="APP-DPI" id="59" />
+      <edge source="A02" target="APP-TEL" id="60" />
+      <edge source="A02" target="FOU-O2" id="61" />
+      <edge source="A02" target="FOU-BIO" id="62" />
+      <edge source="A03" target="APP-BLOC" id="63" />
+      <edge source="A03" target="APP-DPI" id="64" />
+      <edge source="A03" target="APP-PACS" id="65" />
+      <edge source="A03" target="FOU-O2" id="66" />
+      <edge source="A03" target="FOU-BIO" id="67" />
+      <edge source="A04" target="APP-PACS" id="68" />
+      <edge source="A04" target="FOU-SIH" id="69" />
+      <edge source="A04" target="FOU-BIO" id="70" />
+      <edge source="A05" target="APP-SIL" id="71" />
+      <edge source="A05" target="FOU-BIO" id="72" />
+      <edge source="A06" target="APP-PHA" id="73" />
+      <edge source="A06" target="APP-DPI" id="74" />
+      <edge source="A06" target="FOU-O2" id="75" />
+      <edge source="A07" target="APP-DPI" id="76" />
+      <edge source="A07" target="APP-TEL" id="77" />
+      <edge source="A08" target="APP-DPI" id="78" />
+      <edge source="A08" target="APP-AD" id="79" />
+      <edge source="A09" target="APP-ERP" id="80" />
+      <edge source="A10" target="APP-ERP" id="81" />
+      <edge source="A11" target="APP-ERP" id="82" />
+      <edge source="A11" target="FOU-O2" id="83" />
+      <edge source="A12" target="APP-ERP" id="84" />
+      <edge source="A12" target="FOU-BIO" id="85" />
+      <edge source="A13" target="APP-TEL" id="86" />
+      <edge source="A13" target="FOU-TEL" id="87" />
+      <edge source="A14" target="APP-AD" id="88" />
+      <edge source="A14" target="BKP-01" id="89" />
+    </edges>
+  </graph>
+</gexf>

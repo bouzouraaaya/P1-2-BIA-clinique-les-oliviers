@@ -1,0 +1,78 @@
+id_activite,activite,nature,ci,nom_ci,type_ci,niveau_dependance,valeur_metier_min,valeur_technique_min,ecart_min,mode_degrade,severite
+A01,Accueil et prise en charge des urgences vitales,RTO,APP-DPI,Dossier Patient Informatisé,Application,1,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RPO,APP-DPI,Dossier Patient Informatisé,Application,1,5.0,15.0,10.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,APP-PACS,PACS (imagerie),Application,1,10.0,120.0,110.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RPO,APP-PACS,PACS (imagerie),Application,1,5.0,120.0,115.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,APP-SIL,SIL (laboratoire),Application,1,10.0,120.0,110.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RPO,APP-SIL,SIL (laboratoire),Application,1,5.0,60.0,55.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,APP-TEL,Téléphonie IP (IPPBX),Application,1,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,FOU-BIO,Société de maintenance biomédicale,Fournisseur,1,10.0,240.0,230.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,FOU-O2,Fournisseur d'oxygène médical,Fournisseur,1,10.0,120.0,110.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,APP-AD,Annuaire et authentification,Application,2,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,DB-DPI,Base de données DPI,Base de données,2,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RPO,DB-DPI,Base de données DPI,Base de données,2,5.0,15.0,10.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,DB-SIL,Base de données SIL,Base de données,2,10.0,60.0,50.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RPO,DB-SIL,Base de données SIL,Base de données,2,5.0,60.0,55.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,FOU-SIH,Éditeur du SIH,Fournisseur,2,10.0,240.0,230.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-DPI,Serveur applicatif DPI,Serveur,2,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-IPBX,Serveur IPBX,Serveur,2,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-PACS,Serveur PACS,Serveur,2,10.0,60.0,50.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-SIL,Serveur SIL,Serveur,2,10.0,60.0,50.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,HYP-01,Hôte de virtualisation 1,Infrastructure,3,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,HYP-02,Hôte de virtualisation 2,Infrastructure,3,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,NET-CORE,Cœur de réseau,Réseau,3,10.0,15.0,5.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,NET-WAN,Liaison opérateur télécom,Réseau,3,10.0,240.0,230.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SAN-01,Baie de stockage SAN,Infrastructure,3,10.0,60.0,50.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-AD,Contrôleur de domaine,Serveur,3,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SRV-DB01,Serveur de bases de données,Serveur,3,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,FOU-TEL,Opérateur télécom,Fournisseur,4,10.0,240.0,230.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,NET-FW,Pare-feu,Réseau,4,10.0,30.0,20.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,SAL-DC,Salle serveurs,Infrastructure,4,10.0,15.0,5.0,partiel,MAJEUR
+A01,Accueil et prise en charge des urgences vitales,RTO,GE-01,Groupe électrogène,Alimentation,5,10.0,30.0,20.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,APP-DPI,Dossier Patient Informatisé,Application,1,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RPO,APP-DPI,Dossier Patient Informatisé,Application,1,5.0,15.0,10.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,APP-TEL,Téléphonie IP (IPPBX),Application,1,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,FOU-BIO,Société de maintenance biomédicale,Fournisseur,1,5.0,240.0,235.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,FOU-O2,Fournisseur d'oxygène médical,Fournisseur,1,5.0,120.0,115.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,APP-AD,Annuaire et authentification,Application,2,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,DB-DPI,Base de données DPI,Base de données,2,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RPO,DB-DPI,Base de données DPI,Base de données,2,5.0,15.0,10.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,FOU-SIH,Éditeur du SIH,Fournisseur,2,5.0,240.0,235.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SRV-DPI,Serveur applicatif DPI,Serveur,2,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SRV-IPBX,Serveur IPBX,Serveur,2,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,HYP-01,Hôte de virtualisation 1,Infrastructure,3,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,NET-CORE,Cœur de réseau,Réseau,3,5.0,15.0,10.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,NET-WAN,Liaison opérateur télécom,Réseau,3,5.0,240.0,235.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SRV-AD,Contrôleur de domaine,Serveur,3,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SRV-DB01,Serveur de bases de données,Serveur,3,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,FOU-TEL,Opérateur télécom,Fournisseur,4,5.0,240.0,235.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,HYP-02,Hôte de virtualisation 2,Infrastructure,4,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,NET-FW,Pare-feu,Réseau,4,5.0,30.0,25.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SAL-DC,Salle serveurs,Infrastructure,4,5.0,15.0,10.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,SAN-01,Baie de stockage SAN,Infrastructure,4,5.0,60.0,55.0,partiel,MAJEUR
+A02,Réanimation et soins continus,RTO,GE-01,Groupe électrogène,Alimentation,5,5.0,30.0,25.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,APP-BLOC,Planification du bloc opératoire,Application,1,30.0,120.0,90.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RPO,APP-BLOC,Planification du bloc opératoire,Application,1,15.0,60.0,45.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,APP-PACS,PACS (imagerie),Application,1,30.0,120.0,90.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RPO,APP-PACS,PACS (imagerie),Application,1,15.0,120.0,105.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,FOU-BIO,Société de maintenance biomédicale,Fournisseur,1,30.0,240.0,210.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,FOU-O2,Fournisseur d'oxygène médical,Fournisseur,1,30.0,120.0,90.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,FOU-SIH,Éditeur du SIH,Fournisseur,2,30.0,240.0,210.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,SRV-BLOC,Serveur planification bloc,Serveur,2,30.0,60.0,30.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,SRV-PACS,Serveur PACS,Serveur,2,30.0,60.0,30.0,partiel,MAJEUR
+A03,Interventions chirurgicales (6 salles),RTO,SAN-01,Baie de stockage SAN,Infrastructure,3,30.0,60.0,30.0,partiel,MAJEUR
+A04,"Imagerie médicale (radiologie, scanner, IRM)",RPO,APP-PACS,PACS (imagerie),Application,1,60.0,120.0,60.0,partiel,MAJEUR
+A04,"Imagerie médicale (radiologie, scanner, IRM)",RTO,FOU-BIO,Société de maintenance biomédicale,Fournisseur,1,120.0,240.0,120.0,partiel,MAJEUR
+A04,"Imagerie médicale (radiologie, scanner, IRM)",RTO,FOU-SIH,Éditeur du SIH,Fournisseur,1,120.0,240.0,120.0,partiel,MAJEUR
+A05,Analyses biologiques,RTO,FOU-BIO,Société de maintenance biomédicale,Fournisseur,1,120.0,240.0,120.0,partiel,MAJEUR
+A06,Dispensation des médicaments et dispositifs médicaux,RTO,APP-PHA,Logiciel pharmacie,Application,1,90.0,120.0,30.0,partiel,MAJEUR
+A06,Dispensation des médicaments et dispositifs médicaux,RTO,FOU-O2,Fournisseur d'oxygène médical,Fournisseur,1,90.0,120.0,30.0,partiel,MAJEUR
+A06,Dispensation des médicaments et dispositifs médicaux,RTO,FOU-SIH,Éditeur du SIH,Fournisseur,2,90.0,240.0,150.0,partiel,MAJEUR
+A11,"Approvisionnement, achats et gestion des stocks",RPO,APP-ERP,ERP de gestion,Application,1,720.0,1440.0,720.0,oui,MODERE
+A11,"Approvisionnement, achats et gestion des stocks",RPO,DB-ERP,Base de données ERP,Base de données,2,720.0,1440.0,720.0,oui,MODERE
+A13,Téléphonie et communication d'urgence interne,RTO,APP-TEL,Téléphonie IP (IPPBX),Application,1,20.0,30.0,10.0,partiel,MAJEUR
+A13,Téléphonie et communication d'urgence interne,RTO,FOU-TEL,Opérateur télécom,Fournisseur,1,20.0,240.0,220.0,partiel,MAJEUR
+A13,Téléphonie et communication d'urgence interne,RTO,SRV-IPBX,Serveur IPBX,Serveur,2,20.0,30.0,10.0,partiel,MAJEUR
+A13,Téléphonie et communication d'urgence interne,RTO,NET-WAN,Liaison opérateur télécom,Réseau,3,20.0,240.0,220.0,partiel,MAJEUR
+A13,Téléphonie et communication d'urgence interne,RTO,NET-FW,Pare-feu,Réseau,4,20.0,30.0,10.0,partiel,MAJEUR
+A13,Téléphonie et communication d'urgence interne,RTO,GE-01,Groupe électrogène,Alimentation,5,20.0,30.0,10.0,partiel,MAJEUR

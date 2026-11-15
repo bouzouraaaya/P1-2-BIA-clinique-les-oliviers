@@ -1,0 +1,2 @@
+Exécution complet avec graphe : moyenne 1.28 s (3 essais : 1.31, 1.20, 1.33)
+Exécution sans graphe : moyenne 0.45 s (3 essais : 0.38, 0.45, 0.51)
