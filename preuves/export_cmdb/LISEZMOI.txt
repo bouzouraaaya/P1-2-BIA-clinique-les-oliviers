@@ -1,0 +1,1 @@
+Déposer ici l'export CSV de GLPI (étape 6 du guide).

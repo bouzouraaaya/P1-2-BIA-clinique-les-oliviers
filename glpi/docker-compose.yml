@@ -1,0 +1,29 @@
+# GLPI + MariaDB pour la CMDB du projet P1.2 (environnement de test, données fictives).
+# NON TESTÉ dans l'environnement de préparation (pas de Docker) : à lancer et valider sur votre VM Linux.
+# Vérifier les variables sur la page de l'image : https://hub.docker.com/r/diouxx/glpi
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: glpi-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: "ChangezMoi_Root_2026"
+      MARIADB_DATABASE: glpidb
+      MARIADB_USER: glpi_user
+      MARIADB_PASSWORD: "ChangezMoi_Glpi_2026"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+  glpi:
+    image: diouxx/glpi
+    container_name: glpi-app
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+    environment:
+      TIMEZONE: "Europe/Paris"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data/glpi:/var/www/html/glpi
+# Installation web : http://localhost:8080 -> base : hôte "mariadb", utilisateur "glpi_user",
+# mot de passe ci-dessus, base "glpidb". Puis changer les mots de passe par défaut (glpi/glpi, etc.).
