@@ -1,0 +1,36 @@
+id,nom,type,classe_glpi,description,localisation,rto_tech_min,rpo_tech_min,depends_on,hypothese
+APP-DPI,Dossier Patient Informatisé,Application,Logiciel / Appliance,"Dossier patient, prescriptions, admissions",Salle serveurs,30,15,SRV-DPI;DB-DPI;APP-AD;FOU-SIH,H08
+APP-PACS,PACS (imagerie),Application,Logiciel / Appliance,Archivage et diffusion des images,Salle serveurs,120,120,SRV-PACS;FOU-SIH,H11
+APP-SIL,SIL (laboratoire),Application,Logiciel / Appliance,Système d'information du laboratoire,Salle serveurs,120,60,SRV-SIL;DB-SIL,H09
+APP-PHA,Logiciel pharmacie,Application,Logiciel / Appliance,Gestion et dispensation pharmaceutique,Salle serveurs,120,60,SRV-PHA;DB-PHA,H09
+APP-ERP,ERP de gestion,Application,Logiciel / Appliance,"Facturation, RH-paie, achats, GMAO",Salle serveurs,1440,1440,SRV-ERP;DB-ERP,H10
+APP-TEL,Téléphonie IP (IPPBX),Application,Logiciel / Appliance,"Téléphonie fixe, DECT, standard",Salle serveurs,30,,SRV-IPBX,H06
+APP-AD,Annuaire et authentification,Application,Logiciel / Appliance,"Active Directory, accès aux postes et applications",Salle serveurs,30,,SRV-AD,H07
+APP-BLOC,Planification du bloc opératoire,Application,Logiciel / Appliance,Programme opératoire et salles,Salle serveurs,120,60,SRV-BLOC;APP-DPI,H11
+SRV-DPI,Serveur applicatif DPI,Serveur,Ordinateur (serveur virtuel),VM applicative du DPI,Salle serveurs,30,,HYP-01;NET-CORE,H07
+SRV-PACS,Serveur PACS,Serveur,Ordinateur (serveur virtuel),VM du PACS et stockage images,Salle serveurs,60,,HYP-01;SAN-01;NET-CORE,H07
+SRV-SIL,Serveur SIL,Serveur,Ordinateur (serveur virtuel),VM du SIL,Salle serveurs,60,,HYP-02;NET-CORE,H07
+SRV-PHA,Serveur pharmacie,Serveur,Ordinateur (serveur virtuel),VM du logiciel pharmacie,Salle serveurs,60,,HYP-02;NET-CORE,H07
+SRV-ERP,Serveur ERP,Serveur,Ordinateur (serveur virtuel),VM de l'ERP,Salle serveurs,240,,HYP-02;NET-CORE,H07
+SRV-IPBX,Serveur IPBX,Serveur,Ordinateur (serveur virtuel),VM du commutateur téléphonique,Salle serveurs,30,,NET-CORE;NET-WAN,H06
+SRV-AD,Contrôleur de domaine,Serveur,Ordinateur (serveur virtuel),VM Active Directory,Salle serveurs,30,,HYP-01,H07
+SRV-BLOC,Serveur planification bloc,Serveur,Ordinateur (serveur virtuel),VM de planification du bloc,Salle serveurs,60,,HYP-02;NET-CORE,H07
+SRV-DB01,Serveur de bases de données,Serveur,Ordinateur (serveur virtuel),VM hébergeant les instances de bases,Salle serveurs,30,,HYP-02;SAN-01,H07
+DB-DPI,Base de données DPI,Base de données,Instance de base de données,Base du dossier patient,SRV-DB01,30,15,SRV-DB01,H08
+DB-SIL,Base de données SIL,Base de données,Instance de base de données,Base du laboratoire,SRV-DB01,60,60,SRV-DB01,H09
+DB-PHA,Base de données pharmacie,Base de données,Instance de base de données,Base de la pharmacie,SRV-DB01,60,60,SRV-DB01,H09
+DB-ERP,Base de données ERP,Base de données,Instance de base de données,Base de l'ERP,SRV-DB01,240,1440,SRV-DB01,H10
+HYP-01,Hôte de virtualisation 1,Infrastructure,Ordinateur (hyperviseur),"Hôte hébergeant DPI, PACS, AD",Salle serveurs,30,,SAL-DC;SAN-01;NET-CORE,H07
+HYP-02,Hôte de virtualisation 2,Infrastructure,Ordinateur (hyperviseur),"Hôte hébergeant SIL, pharmacie, ERP, bases",Salle serveurs,30,,SAL-DC;SAN-01;NET-CORE,H07
+SAN-01,Baie de stockage SAN,Infrastructure,Équipement de stockage,Stockage partagé des VM et des images,Salle serveurs,60,,SAL-DC,H07
+BKP-01,Serveur de sauvegarde,Infrastructure,Ordinateur (serveur),Sauvegardes quotidiennes et horaires,Salle serveurs,120,,SAN-01;SAL-DC,H09
+NET-CORE,Cœur de réseau,Réseau,Équipement réseau,Commutateurs cœur redondés,Salle serveurs,15,,SAL-DC,H07
+NET-FW,Pare-feu,Réseau,Équipement réseau,Pare-feu périmétrique,Salle serveurs,30,,NET-CORE,H07
+NET-WAN,Liaison opérateur télécom,Réseau,Équipement réseau,Lien WAN / trunk SIP,Salle serveurs,240,,NET-FW;FOU-TEL,H12
+SAL-DC,Salle serveurs,Infrastructure,Baie / local technique,"Local technique, climatisation",Bâtiment A,15,,UPS-01;GE-01,H06
+UPS-01,Onduleur,Alimentation,Alimentation (onduleur),Onduleur 20 min d'autonomie,Bâtiment A,0,,,H06
+GE-01,Groupe électrogène,Alimentation,Alimentation (groupe),Groupe de secours avec reprise automatique,Bâtiment A,30,,,H06
+FOU-SIH,Éditeur du SIH,Fournisseur,Fournisseur,Support éditeur du SIH (GTR 4 h),Externe,240,,,H12
+FOU-O2,Fournisseur d'oxygène médical,Fournisseur,Fournisseur,Livraison d'oxygène médical,Externe,120,,,H12
+FOU-TEL,Opérateur télécom,Fournisseur,Fournisseur,Accès opérateur (GTR 4 h),Externe,240,,,H12
+FOU-BIO,Société de maintenance biomédicale,Fournisseur,Fournisseur,Maintenance des équipements biomédicaux (GTR 4 h),Externe,240,,,H12

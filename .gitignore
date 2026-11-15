@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.venv/
+# données locales de GLPI / MariaDB (docker)
+glpi/data/

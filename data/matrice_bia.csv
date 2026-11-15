@@ -1,0 +1,15 @@
+id,service,activite,dmia_min,rto_min,rpo_min,mbco,ci_supports,mode_degrade,imp_1h,imp_4h,imp_24h,imp_72h,imp_1w
+A01,Urgences,Accueil et prise en charge des urgences vitales,15,10,5,"Prise en charge des urgences vitales uniquement, sur fiches papier, avec accès imagerie/biologie urgentes",APP-DPI;APP-TEL;APP-PACS;APP-SIL;FOU-O2;FOU-BIO,partiel,5,5,5,5,5
+A02,Réanimation,Réanimation et soins continus,10,5,5,"Maintien de la surveillance (scopes autonomes), oxygène et prescriptions sur papier pour tous les patients présents",APP-DPI;APP-TEL;FOU-O2;FOU-BIO,partiel,5,5,5,5,5
+A03,Bloc opératoire,Interventions chirurgicales (6 salles),60,30,15,"Terminer les interventions en cours, accueillir les urgences chirurgicales vitales, reporter le programme électif",APP-BLOC;APP-DPI;APP-PACS;FOU-O2;FOU-BIO,partiel,4,5,5,5,5
+A04,Imagerie,"Imagerie médicale (radiologie, scanner, IRM)",240,120,60,"Examens urgents uniquement, lecture sur console, compte rendu papier",APP-PACS;FOU-SIH;FOU-BIO,partiel,3,4,5,5,5
+A05,Laboratoire,Analyses biologiques,240,120,60,"Analyses urgentes (gaz du sang, hémostase, biochimie vitale), résultats téléphonés et papier",APP-SIL;FOU-BIO,partiel,2,4,5,5,5
+A06,Pharmacie,Dispensation des médicaments et dispositifs médicaux,240,90,60,"Délivrance des traitements critiques et stupéfiants sur ordonnance papier, traçabilité différée",APP-PHA;APP-DPI;FOU-O2,partiel,2,4,5,5,5
+A07,Hospitalisation,Soins en unités d'hospitalisation,1440,480,240,"Suivi des patients sur dossier papier de secours, traitements administrés selon dernier plan connu",APP-DPI;APP-TEL,oui,1,2,4,5,5
+A08,Administration,Admission et gestion administrative des patients,1440,600,60,"Admissions urgentes sur formulaires papier, régularisation différée",APP-DPI;APP-AD,oui,1,2,4,5,5
+A09,Facturation,Facturation et recouvrement,10080,4320,1440,"Saisie différée, pas de facturation pendant l'interruption",APP-ERP,oui,1,1,2,3,5
+A10,Administration,Gestion des ressources humaines et de la paie,10080,2880,1440,"Paie sur base du mois précédent en cas d'échéance, plannings de garde papier",APP-ERP,oui,1,1,2,3,4
+A11,Logistique,"Approvisionnement, achats et gestion des stocks",2880,1440,720,"Commandes d'urgence par téléphone, stocks de sécurité",APP-ERP;FOU-O2,oui,1,2,3,4,5
+A12,Technique,Maintenance biomédicale et technique,2880,1800,1440,"Interventions curatives urgentes uniquement, GMAO consultée a posteriori",APP-ERP;FOU-BIO,oui,1,2,3,4,5
+A13,Support,Téléphonie et communication d'urgence interne,60,20,1440,Téléphones DECT/mobiles de crise et annuaire papier pour les services critiques,APP-TEL;FOU-TEL,partiel,3,4,5,5,5
+A14,DSI,Exploitation et support du système d'information,240,180,240,Supervision des systèmes critiques et gestion des accès d'urgence,APP-AD;BKP-01,non,2,4,5,5,5
