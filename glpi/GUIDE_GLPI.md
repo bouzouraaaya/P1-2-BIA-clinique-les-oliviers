@@ -22,3 +22,12 @@ Les 35 éléments de configuration (CI) sont décrits dans `../data/cmdb_ci.csv`
 ## Preuves à fournir (sujet, 2.2.4)
 - Export de la CMDB (étape 6) ; script commenté et jeu d'essai (ce dossier) ; graphe généré (`resultats/graphe_dependances.png`).
 - Les menus exacts peuvent varier selon la version de GLPI : noter la version utilisée dans le journal.
+
+## Import automatique des CI par l'API (alternative à la saisie manuelle)
+Script : `glpi_import.py` (Python 3.5+, sans bibliothèque externe). Il crée 35 CI et 14 activités dans GLPI avec RTO/RPO et dépendances dans le champ Commentaires.
+1. GLPI : Configuration > Générale > onglet API : activer l'API REST et la connexion par jeton externe. Dans « Clients de l'API », ouvrir le client « full access from localhost » et élargir la plage IPv4 (0.0.0.0 à 255.255.255.255) car Docker masque l'adresse locale (environnement de test uniquement).
+2. Mes paramètres : copier la « Clé d'accès distant (API) » (jeton utilisateur).
+3. Essai : `python3 glpi_import.py --user-token JETON --limit 3`, puis complet : `python3 glpi_import.py --user-token JETON`.
+4. Le script mémorise les éléments créés (`glpi_state.json`) : on peut le relancer sans créer de doublons.
+Limite : les relations de l'Analyse d'impact ne sont pas créables par l'API ; elles se saisissent dans l'interface (au moins pour l'activité A02).
+Test : `glpi/test_mock/run_test.py` vérifie le script contre un faux serveur GLPI (49 éléments créés, reprise sans doublon, échec isolé). Le script n'a pas été testé contre un vrai GLPI.
