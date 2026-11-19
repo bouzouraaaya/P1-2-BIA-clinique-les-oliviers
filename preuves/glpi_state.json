@@ -1,0 +1,198 @@
+{
+ "DB-SIL": {
+  "id": 2,
+  "itemtype": "DatabaseInstance"
+ },
+ "DB-DPI": {
+  "id": 1,
+  "itemtype": "DatabaseInstance"
+ },
+ "FOU-O2": {
+  "id": 2,
+  "itemtype": "Supplier"
+ },
+ "ACT-A01": {
+  "id": 9,
+  "itemtype": "Appliance"
+ },
+ "SRV-BLOC": {
+  "id": 8,
+  "itemtype": "Computer"
+ },
+ "ACT-A04": {
+  "id": 12,
+  "itemtype": "Appliance"
+ },
+ "NET-CORE": {
+  "id": 2,
+  "itemtype": "NetworkEquipment"
+ },
+ "ACT-A11": {
+  "id": 19,
+  "itemtype": "Appliance"
+ },
+ "ACT-A02": {
+  "id": 10,
+  "itemtype": "Appliance"
+ },
+ "GE-01": {
+  "id": 3,
+  "itemtype": "PassiveDCEquipment"
+ },
+ "SRV-DPI": {
+  "id": 1,
+  "itemtype": "Computer"
+ },
+ "ACT-A13": {
+  "id": 21,
+  "itemtype": "Appliance"
+ },
+ "SRV-PACS": {
+  "id": 2,
+  "itemtype": "Computer"
+ },
+ "ACT-A14": {
+  "id": 22,
+  "itemtype": "Appliance"
+ },
+ "APP-DPI": {
+  "id": 1,
+  "itemtype": "Appliance"
+ },
+ "SRV-DB01": {
+  "id": 9,
+  "itemtype": "Computer"
+ },
+ "SRV-ERP": {
+  "id": 5,
+  "itemtype": "Computer"
+ },
+ "ACT-A08": {
+  "id": 16,
+  "itemtype": "Appliance"
+ },
+ "ACT-A09": {
+  "id": 17,
+  "itemtype": "Appliance"
+ },
+ "APP-ERP": {
+  "id": 5,
+  "itemtype": "Appliance"
+ },
+ "ACT-A03": {
+  "id": 11,
+  "itemtype": "Appliance"
+ },
+ "ACT-A12": {
+  "id": 20,
+  "itemtype": "Appliance"
+ },
+ "DB-PHA": {
+  "id": 3,
+  "itemtype": "DatabaseInstance"
+ },
+ "SRV-AD": {
+  "id": 7,
+  "itemtype": "Computer"
+ },
+ "APP-SIL": {
+  "id": 3,
+  "itemtype": "Appliance"
+ },
+ "ACT-A07": {
+  "id": 15,
+  "itemtype": "Appliance"
+ },
+ "ACT-A05": {
+  "id": 13,
+  "itemtype": "Appliance"
+ },
+ "FOU-TEL": {
+  "id": 3,
+  "itemtype": "Supplier"
+ },
+ "HYP-02": {
+  "id": 11,
+  "itemtype": "Computer"
+ },
+ "APP-BLOC": {
+  "id": 8,
+  "itemtype": "Appliance"
+ },
+ "FOU-BIO": {
+  "id": 4,
+  "itemtype": "Supplier"
+ },
+ "BKP-01": {
+  "id": 12,
+  "itemtype": "Computer"
+ },
+ "ACT-A06": {
+  "id": 14,
+  "itemtype": "Appliance"
+ },
+ "APP-PHA": {
+  "id": 4,
+  "itemtype": "Appliance"
+ },
+ "APP-TEL": {
+  "id": 6,
+  "itemtype": "Appliance"
+ },
+ "ACT-A10": {
+  "id": 18,
+  "itemtype": "Appliance"
+ },
+ "FOU-SIH": {
+  "id": 1,
+  "itemtype": "Supplier"
+ },
+ "UPS-01": {
+  "id": 2,
+  "itemtype": "PassiveDCEquipment"
+ },
+ "SAN-01": {
+  "id": 1,
+  "itemtype": "NetworkEquipment"
+ },
+ "NET-FW": {
+  "id": 3,
+  "itemtype": "NetworkEquipment"
+ },
+ "SAL-DC": {
+  "id": 1,
+  "itemtype": "PassiveDCEquipment"
+ },
+ "SRV-SIL": {
+  "id": 3,
+  "itemtype": "Computer"
+ },
+ "DB-ERP": {
+  "id": 4,
+  "itemtype": "DatabaseInstance"
+ },
+ "APP-PACS": {
+  "id": 2,
+  "itemtype": "Appliance"
+ },
+ "HYP-01": {
+  "id": 10,
+  "itemtype": "Computer"
+ },
+ "APP-AD": {
+  "id": 7,
+  "itemtype": "Appliance"
+ },
+ "NET-WAN": {
+  "id": 4,
+  "itemtype": "NetworkEquipment"
+ },
+ "SRV-PHA": {
+  "id": 4,
+  "itemtype": "Computer"
+ },
+ "SRV-IPBX": {
+  "id": 6,
+  "itemtype": "Computer"
+ }
+}
