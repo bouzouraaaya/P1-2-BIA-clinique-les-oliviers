@@ -31,3 +31,6 @@ Script : `glpi_import.py` (Python 3.5+, sans bibliothèque externe). Il crée 35
 4. Le script mémorise les éléments créés (`glpi_state.json`) : on peut le relancer sans créer de doublons.
 Limite : les relations de l'Analyse d'impact ne sont pas créables par l'API ; elles se saisissent dans l'interface (au moins pour l'activité A02).
 Test : `glpi/test_mock/run_test.py` vérifie le script contre un faux serveur GLPI (49 éléments créés, reprise sans doublon, échec isolé). Le script n'a pas été testé contre un vrai GLPI.
+
+## Export CSV de la CMDB par l'API
+`python3 glpi_export.py --user-token JETON` écrit 6 fichiers CSV (ordinateurs, matériels réseau, équipements passifs, applicatifs, instances de bases, fournisseurs) dans `preuves/export_cmdb/`. Testé contre un faux serveur GLPI, pas contre un vrai.
